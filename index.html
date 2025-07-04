@@ -25,6 +25,14 @@
             <nav class="flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
                 <a class="hover:underline px-2" href="mailto:snipkeys@hbb.sh" data-translate-key="contactUs">Contact Us</a>
                 <a class="hover:underline px-2" href="privacy.html" data-translate-key="privacy">Privacy</a>
+                <select id="languageSelector" class="px-2 text-sm sm:text-base bg-transparent border-none hover:underline focus:outline-none cursor-pointer">
+                    <option value="en">English</option>
+                    <option value="zh-CN">简体中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
             </nav>
         </div>
     </header>
@@ -149,7 +157,7 @@
                     "feature4Desc": "Organize your snippets, choose titles for your keys, and arrange them exactly how you want in our simple companion app.",
                     "footerRights": "© 2025 SnipKeys. All rights reserved.",
                     "footerPrivacy": "Privacy Policy",
-                    "footerContact": "Contact"
+                    "footerContact": "Contact Us"
                 },
                 "zh-CN": {
                     "pageTitle": "SnipKeys – 您的个人短语键盘 | 少输入，多办事",
@@ -172,7 +180,7 @@
                     "feature4Desc": "在简洁的配套应用中，您可以整理您的短语、命名您的按键，并按您喜欢的方式精确排列它们。",
                     "footerRights": "© 2025 SnipKeys. 版权所有。",
                     "footerPrivacy": "隐私政策",
-                    "footerContact": "联系"
+                    "footerContact": "联系我们"
                 },
                 "ja": {
                     "pageTitle": "SnipKeys – あなた専用のスニペットキーボード | 入力は少なく、成果は多く",
@@ -195,7 +203,7 @@
                     "feature4Desc": "シンプルなコンパニオンアプリで、スニペットを整理し、キーに名前を付け、好きなように正確に配置できます。",
                     "footerRights": "© 2025 SnipKeys. All rights reserved.",
                     "footerPrivacy": "プライバシーポリシー",
-                    "footerContact": "連絡先"
+                    "footerContact": "お問い合わせ"
                 },
                 "de": {
                     "pageTitle": "SnipKeys – Ihre Persönliche Snippet-Tastatur | Weniger tippen, mehr erreichen",
@@ -218,7 +226,7 @@
                     "feature4Desc": "Organisieren Sie Ihre Snippets, wählen Sie Titel für Ihre Tasten und ordnen Sie sie genau so an, wie Sie es in unserer einfachen Begleit-App möchten.",
                     "footerRights": "© 2025 SnipKeys. Alle Rechte vorbehalten.",
                     "footerPrivacy": "Datenschutzrichtlinie",
-                    "footerContact": "Kontakt"
+                    "footerContact": "Kontaktieren Sie uns"
                 },
                 "fr": {
                     "pageTitle": "SnipKeys – Votre Clavier de Snippets Personnel | Tapez moins, faites plus",
@@ -241,7 +249,7 @@
                     "feature4Desc": "Organisez vos snippets, choisissez des titres pour vos touches et arrangez-les exactement comme vous le souhaitez dans notre application compagnon simple.",
                     "footerRights": "© 2025 SnipKeys. Tous droits réservés.",
                     "footerPrivacy": "Politique de confidentialité",
-                    "footerContact": "Contact"
+                    "footerContact": "Contactez-nous"
                 },
                 "es": {
                     "pageTitle": "SnipKeys – Tu Teclado de Fragmentos Personal | Escribe menos, haz más",
@@ -264,46 +272,70 @@
                     "feature4Desc": "Organiza tus fragmentos, elige títulos para tus teclas y colócalos exactamente como quieras en nuestra sencilla aplicación compañera.",
                     "footerRights": "© 2025 SnipKeys. Todos los derechos reservados.",
                     "footerPrivacy": "Política de privacidad",
-                    "footerContact": "Contacto"
+                    "footerContact": "Contacte con nosotros"
                 }
             };
 
             // 2. 检测浏览器语言并选择合适的翻译
+            const savedLang = localStorage.getItem('selectedLanguage'); // 获取保存的语言设置
             const userLang = navigator.language || 'en'; // 获取浏览器语言，默认为 'en'
-            let langToUse = 'en'; // 最终使用的语言，默认为 'en'
+            let langToUse = savedLang || 'en'; // 优先使用保存的语言，否则默认为 'en'
 
-            if (translations[userLang]) {
-                // 如果有完全匹配的语言 (例如 'zh-CN')
-                langToUse = userLang;
-            } else {
-                // 如果没有完全匹配，尝试匹配基础语言 (例如 'en' for 'en-US')
-                const baseLang = userLang.split('-')[0];
-                if (translations[baseLang]) {
-                    langToUse = baseLang;
+            // 如果没有保存的语言设置，则根据浏览器语言自动选择
+            if (!savedLang) {
+                if (translations[userLang]) {
+                    // 如果有完全匹配的语言 (例如 'zh-CN')
+                    langToUse = userLang;
+                } else {
+                    // 如果没有完全匹配，尝试匹配基础语言 (例如 'en' for 'en-US')
+                    const baseLang = userLang.split('-')[0];
+                    if (translations[baseLang]) {
+                        langToUse = baseLang;
+                    }
                 }
             }
             
-            // 获取当前语言的翻译文本对象
-            const langTranslations = translations[langToUse];
+            // 3. 应用翻译到页面的函数
+            function applyTranslations(language) {
+                const langTranslations = translations[language];
+                if (!langTranslations) return;
 
-            // 3. 应用翻译到页面
-            // 更新页面标题
-            document.title = langTranslations.pageTitle;
-            
-            // 更新 meta description
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) {
-                metaDesc.setAttribute('content', langTranslations.metaDescription);
-            }
-            
-            // 遍历所有带 data-translate-key 的元素并替换内容
-            document.querySelectorAll('[data-translate-key]').forEach(element => {
-                const key = element.getAttribute('data-translate-key');
-                if (langTranslations[key]) {
-                    // 使用 innerHTML 以支持 <span> 标签等富文本
-                    element.innerHTML = langTranslations[key];
+                // 更新页面标题
+                document.title = langTranslations.pageTitle;
+                
+                // 更新 meta description
+                const metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc) {
+                    metaDesc.setAttribute('content', langTranslations.metaDescription);
                 }
-            });
+                
+                // 遍历所有带 data-translate-key 的元素并替换内容
+                document.querySelectorAll('[data-translate-key]').forEach(element => {
+                    const key = element.getAttribute('data-translate-key');
+                    if (langTranslations[key]) {
+                        // 使用 innerHTML 以支持 <span> 标签等富文本
+                        element.innerHTML = langTranslations[key];
+                    }
+                });
+            }
+
+            // 4. 初始化页面翻译
+            applyTranslations(langToUse);
+
+            // 5. 设置语言选择器的当前值
+            const languageSelector = document.getElementById('languageSelector');
+            if (languageSelector) {
+                languageSelector.value = langToUse;
+                
+                // 6. 添加语言切换事件监听器
+                languageSelector.addEventListener('change', function() {
+                    const selectedLang = this.value;
+                    // 保存选择的语言到本地存储
+                    localStorage.setItem('selectedLanguage', selectedLang);
+                    // 应用新的翻译
+                    applyTranslations(selectedLang);
+                });
+            }
 
         });
     </script>
