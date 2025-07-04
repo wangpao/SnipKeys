@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://spokenly.app/_next/static/css/275ed64cc4367444.css" data-precedence="next">
     <link rel="stylesheet" href="https://spokenly.app/_next/static/css/158cb0026bd05752.css" data-precedence="next">
+    
+    <!-- 标题和描述将由JavaScript动态修改 -->
     <title>Privacy Policy – SnipKeys</title>
     <meta name="description" content="Read the privacy policy for SnipKeys. We are committed to protecting your privacy and your data.">
     
@@ -20,74 +22,82 @@
                 <img alt="SnipKeys Logo" fetchpriority="high" width="24" height="24" decoding="async" data-nimg="1" class="object-contain" style="color:transparent" src="images/snipkeys_logo_small.png">
                 <span class="font-bold text-xl">SnipKeys</span>
             </a>
-            <!-- === 右上角的导航链接已移除 === -->
+            <!-- === 右上角新增语言选择下拉菜单 === -->
+            <div class="flex items-center">
+                <select id="language-selector" class="text-sm text-gray-500" style="background-color: transparent; border: none; cursor: pointer; padding-right: 1.5rem; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236b7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-13%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2013%203.7%203.7%208%205.4%2013%205.4h255.1c5%200%209.3-1.8%2013-5.4%203.7-3.7%205.4-8%205.4-13%200-5-1.8-9.3-5.4-13zM287%20203.7c-3.7-3.7-8-5.4-13-5.4H18.4c-5%200-9.3%201.8-13%205.4a17.6%2017.6%200%200%200-5.4%2013c0%205%201.8%209.3%205.4%2013%203.7%203.7%208%205.4%2013%205.4h255.1c5%200%209.3-1.8%2013-5.4%203.7-3.7%205.4-8%205.4-13%200-5-1.8-9.3-5.4-13z%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right .2rem top 50%; background-size: .45rem auto;">
+                    <option value="en">English</option>
+                    <option value="zh-CN">简体中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
         </div>
     </header>
     <main class="min-h-screen bg-gray-50">
         <div class="min-h-screen bg-background">
             <main class="container max-w-4xl py-12 sm:py-20 px-4 sm:px-6">
-                <!-- Prose class provides nice typography for long-form text -->
                 <div class="prose prose-gray max-w-none">
-                    <h1>Privacy Policy for SnipKeys</h1>
-                    <!-- === 日期已更新 === -->
-                    <p><strong>Last Updated:</strong> July 4, 2025</p>
+                    <h1 data-translate-key="title">Privacy Policy for SnipKeys</h1>
+                    <p data-translate-key="lastUpdated"><strong>Last Updated:</strong> July 4, 2025</p>
 
-                    <h2>Our Privacy Philosophy</h2>
-                    <p>
+                    <h2 data-translate-key="philosophyTitle">Our Privacy Philosophy</h2>
+                    <p data-translate-key="philosophyDesc">
                         At SnipKeys, your privacy isn't an afterthought—it's the foundation of our product. We created SnipKeys to be a powerful, personal tool that you can trust completely. Our commitment is simple: <strong>what you type is yours and yours alone</strong>. We have designed our app and keyboard from the ground up to collect the absolute minimum data required to function, and we will never track your keystrokes or the content you create.
                     </p>
 
-                    <h2>Information We Collect</h2>
-                    <p>We've divided this into two parts: the SnipKeys companion app and the SnipKeys Keyboard Extension.</p>
+                    <h2 data-translate-key="infoCollectTitle">Information We Collect</h2>
+                    <p data-translate-key="infoCollectDesc">We've divided this into two parts: the SnipKeys companion app and the SnipKeys Keyboard Extension.</p>
 
-                    <h3>1. The SnipKeys Companion App</h3>
+                    <h3 data-translate-key="companionAppTitle">1. The SnipKeys Companion App</h3>
                     <ul>
-                        <li><strong>Personal Information:</strong> We collect none. You do not need an account to use SnipKeys. We do not ask for your name, email address, or any other personal identifiers.</li>
-                        <li><strong>Your Snippets:</strong> All the snippets (text fragments) and key configurations you create are stored <strong>only on your device</strong>. If you have iCloud enabled, this data may be securely synced across your devices using Apple's iCloud service, which we cannot access.</li>
+                        <li data-translate-key="companionAppLi1"><strong>Personal Information:</strong> We collect none. You do not need an account to use SnipKeys. We do not ask for your name, email address, or any other personal identifiers.</li>
+                        <li data-translate-key="companionAppLi2"><strong>Your Snippets:</strong> All the snippets (text fragments) and key configurations you create are stored <strong>only on your device</strong>. If you have iCloud enabled, this data may be securely synced across your devices using Apple's iCloud service, which we cannot access.</li>
                     </ul>
 
-                    <h3>2. The SnipKeys Keyboard Extension</h3>
+                    <h3 data-translate-key="extensionTitle">2. The SnipKeys Keyboard Extension</h3>
                     <ul>
-                        <li><strong>Keystrokes:</strong> We <strong>do not</strong> collect, log, or transmit anything you type using the SnipKeys keyboard. The content of your snippets is inserted directly into the text field you are using and is never sent to us.</li>
-                        <li><strong>Usage Data:</strong> We do not collect any analytics or usage data from the keyboard extension itself.</li>
+                        <li data-translate-key="extensionLi1"><strong>Keystrokes:</strong> We <strong>do not</strong> collect, log, or transmit anything you type using the SnipKeys keyboard. The content of your snippets is inserted directly into the text field you are using and is never sent to us.</li>
+                        <li data-translate-key="extensionLi2"><strong>Usage Data:</strong> We do not collect any analytics or usage data from the keyboard extension itself.</li>
                     </ul>
 
-                    <h2>The "Allow Full Access" Permission</h2>
-                    <p>
+                    <h2 data-translate-key="fullAccessTitle">The "Allow Full Access" Permission</h2>
+                    <p data-translate-key="fullAccessP1">
                         You may notice that some third-party keyboards ask for "Full Access" permission.
                     </p>
-                    <p>
+                    <p data-translate-key="fullAccessP2">
                         <strong>The core functionality of SnipKeys does NOT require "Full Access."</strong>
                     </p>
-                    <p>
+                    <p data-translate-key="fullAccessP3">
                         We have intentionally designed it this way to give you the highest level of privacy and security. Without this permission, the keyboard operates in a strict sandbox, completely isolated from the network and other apps, which guarantees that we cannot access your keystrokes.
                     </p>
-                    <p>
+                    <p data-translate-key="fullAccessP4">
                         In the future, we may offer optional features (such as custom sounds or haptic feedback) that require this permission to function. If we do, enabling these features will be your choice, and we will clearly explain why the permission is needed at that time. Even with Full Access enabled for such features, our policy of not logging or transmitting your keystrokes will remain unchanged.
                     </p>
                     
-                    <h2>How We Use Information</h2>
-                    <p>
+                    <h2 data-translate-key="howWeUseTitle">How We Use Information</h2>
+                    <p data-translate-key="howWeUseDesc">
                         Since we collect virtually no personal information, there is very little to use. Your snippets are used only by you to populate your keyboard. That's it.
                     </p>
 
-                    <h2>Data Sharing and Third Parties</h2>
-                    <p>
+                    <h2 data-translate-key="sharingTitle">Data Sharing and Third Parties</h2>
+                    <p data-translate-key="sharingDesc">
                         We do not sell, trade, rent, or share your personal data with any third parties because we don't have it in the first place.
                     </p>
 
-                    <h2>Data Security</h2>
-                    <p>
+                    <h2 data-translate-key="securityTitle">Data Security</h2>
+                    <p data-translate-key="securityDesc">
                         All your snippet data resides on your device, protected by the security measures of Apple's iOS. If you use iCloud sync, your data is protected by Apple's end-to-end encryption.
                     </p>
                     
-                    <h2>Changes to This Privacy Policy</h2>
-                    <p>
+                    <h2 data-translate-key="changesTitle">Changes to This Privacy Policy</h2>
+                    <p data-translate-key="changesDesc">
                         We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes.
                     </p>
 
-                    <h2>Contact Us</h2>
-                    <p>
+                    <h2 data-translate-key="contactTitle">Contact Us</h2>
+                    <p data-translate-key="contactDesc">
                         If you have any questions about this Privacy Policy, you can contact us by email:
                         <a href="mailto:snipkeys@hbb.sh">snipkeys@hbb.sh</a>
                     </p>
@@ -97,12 +107,276 @@
     </main>
     <footer class="border-t bg-white">
         <div class="container mx-auto py-6 px-4 sm:px-6 text-sm text-gray-500 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
-            <div class="text-center sm:text-left">&copy; 2025 SnipKeys. All rights reserved.</div>
+            <div data-translate-key="footerRights" class="text-center sm:text-left">&copy; 2025 SnipKeys. All rights reserved.</div>
             <div class="flex gap-4">
-                <a class="hover:underline" href="privacy.html">Privacy Policy</a>
-                <a class="hover:underline" href="mailto:snipkeys@hbb.sh">Contact</a>
+                <a class="hover:underline" href="privacy.html" data-translate-key="footerPrivacy">Privacy Policy</a>
+                <a class="hover:underline" href="mailto:snipkeys@hbb.sh" data-translate-key="footerContact">Contact</a>
             </div>
         </div>
     </footer>
+
+    <!-- === 多语言支持脚本 === -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const translations = {
+                // English Translations
+                "en": {
+                    "pageTitle": "Privacy Policy – SnipKeys",
+                    "metaDescription": "Read the privacy policy for SnipKeys. We are committed to protecting your privacy and your data.",
+                    "title": "Privacy Policy for SnipKeys",
+                    "lastUpdated": "<strong>Last Updated:</strong> July 4, 2025",
+                    "philosophyTitle": "Our Privacy Philosophy",
+                    "philosophyDesc": "At SnipKeys, your privacy isn't an afterthought—it's the foundation of our product. We created SnipKeys to be a powerful, personal tool that you can trust completely. Our commitment is simple: <strong>what you type is yours and yours alone</strong>. We have designed our app and keyboard from the ground up to collect the absolute minimum data required to function, and we will never track your keystrokes or the content you create.",
+                    "infoCollectTitle": "Information We Collect",
+                    "infoCollectDesc": "We've divided this into two parts: the SnipKeys companion app and the SnipKeys Keyboard Extension.",
+                    "companionAppTitle": "1. The SnipKeys Companion App",
+                    "companionAppLi1": "<strong>Personal Information:</strong> We collect none. You do not need an account to use SnipKeys. We do not ask for your name, email address, or any other personal identifiers.",
+                    "companionAppLi2": "<strong>Your Snippets:</strong> All the snippets (text fragments) and key configurations you create are stored <strong>only on your device</strong>. If you have iCloud enabled, this data may be securely synced across your devices using Apple's iCloud service, which we cannot access.",
+                    "extensionTitle": "2. The SnipKeys Keyboard Extension",
+                    "extensionLi1": "<strong>Keystrokes:</strong> We <strong>do not</strong> collect, log, or transmit anything you type using the SnipKeys keyboard. The content of your snippets is inserted directly into the text field you are using and is never sent to us.",
+                    "extensionLi2": "<strong>Usage Data:</strong> We do not collect any analytics or usage data from the keyboard extension itself.",
+                    "fullAccessTitle": "The \"Allow Full Access\" Permission",
+                    "fullAccessP1": "You may notice that some third-party keyboards ask for \"Full Access\" permission.",
+                    "fullAccessP2": "<strong>The core functionality of SnipKeys does NOT require \"Full Access.\"</strong>",
+                    "fullAccessP3": "We have intentionally designed it this way to give you the highest level of privacy and security. Without this permission, the keyboard operates in a strict sandbox, completely isolated from the network and other apps, which guarantees that we cannot access your keystrokes.",
+                    "fullAccessP4": "In the future, we may offer optional features (such as custom sounds or haptic feedback) that require this permission to function. If we do, enabling these features will be your choice, and we will clearly explain why the permission is needed at that time. Even with Full Access enabled for such features, our policy of not logging or transmitting your keystrokes will remain unchanged.",
+                    "howWeUseTitle": "How We Use Information",
+                    "howWeUseDesc": "Since we collect virtually no personal information, there is very little to use. Your snippets are used only by you to populate your keyboard. That's it.",
+                    "sharingTitle": "Data Sharing and Third Parties",
+                    "sharingDesc": "We do not sell, trade, rent, or share your personal data with any third parties because we don't have it in the first place.",
+                    "securityTitle": "Data Security",
+                    "securityDesc": "All your snippet data resides on your device, protected by the security measures of Apple's iOS. If you use iCloud sync, your data is protected by Apple's end-to-end encryption.",
+                    "changesTitle": "Changes to This Privacy Policy",
+                    "changesDesc": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date. We encourage you to review this Privacy Policy periodically for any changes.",
+                    "contactTitle": "Contact Us",
+                    "contactDesc": "If you have any questions about this Privacy Policy, you can contact us by email: <a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. All rights reserved.",
+                    "footerPrivacy": "Privacy Policy",
+                    "footerContact": "Contact"
+                },
+                // Simplified Chinese Translations
+                "zh-CN": {
+                    "pageTitle": "隐私政策 – SnipKeys",
+                    "metaDescription": "阅读 SnipKeys 的隐私政策。我们致力于保护您的隐私和数据。",
+                    "title": "SnipKeys 隐私政策",
+                    "lastUpdated": "<strong>最后更新于：</strong> 2025年7月4日",
+                    "philosophyTitle": "我们的隐私理念",
+                    "philosophyDesc": "在 SnipKeys，您的隐私不是事后才考虑的问题，而是我们产品的基石。我们创造 SnipKeys 的初衷是使其成为一个您可以完全信赖的、强大的个人工具。我们的承诺很简单：<strong>您输入的内容只属于您自己</strong>。我们从一开始就将应用和键盘设计为仅收集运作所必需的最少量数据，并且我们绝不会追踪您的击键或您创建的内容。",
+                    "infoCollectTitle": "我们收集的信息",
+                    "infoCollectDesc": "我们将此分为两部分：SnipKeys 配套应用和 SnipKeys 键盘扩展。",
+                    "companionAppTitle": "1. SnipKeys 配套应用",
+                    "companionAppLi1": "<strong>个人信息：</strong>我们不收集任何个人信息。您无需帐户即可使用 SnipKeys。我们不会询问您的姓名、电子邮件地址或任何其他个人标识符。",
+                    "companionAppLi2": "<strong>您的短语片段：</strong>您创建的所有短语片段和按键配置都<strong>仅存储在您的设备上</strong>。如果您启用了 iCloud，此数据可能会通过我们无法访问的 Apple iCloud 服务在您的设备之间安全同步。",
+                    "extensionTitle": "2. SnipKeys 键盘扩展",
+                    "extensionLi1": "<strong>击键记录：</strong>我们<strong>不会</strong>收集、记录或传输您使用 SnipKeys 键盘输入的任何内容。您短语片段的内容会直接插入您正在使用的文本字段中，绝不会发送给我们。",
+                    "extensionLi2": "<strong>使用数据：</strong>我们不从键盘扩展本身收集任何分析或使用数据。",
+                    "fullAccessTitle": "关于“完全访问”权限",
+                    "fullAccessP1": "您可能会注意到，一些第三方键盘会请求“完全访问”权限。",
+                    "fullAccessP2": "<strong>SnipKeys 的核心功能不需要“完全访问”。</strong>",
+                    "fullAccessP3": "我们特意这样设计，旨在为您提供最高级别的隐私和安全。没有此权限，键盘将在一个严格的沙盒中运行，与网络和其他应用完全隔离，这保证了我们无法访问您的击键记录。",
+                    "fullAccessP4": "将来，我们可能会提供需要此权限才能实现的可选功能（例如自定义声音或触感反馈）。届时，启用这些功能将是您的选择，我们会清楚地解释需要此权限的原因。即使为这些功能启用了完全访问权限，我们不记录或传输您击键记录的政策也将保持不变。",
+                    "howWeUseTitle": "我们如何使用信息",
+                    "howWeUseDesc": "由于我们几乎不收集任何个人信息，因此几乎没有什么可使用的。您的短语片段仅由您自己用来填充您的键盘。就是这样。",
+                    "sharingTitle": "数据共享与第三方",
+                    "sharingDesc": "我们不会出售、交易、出租或与任何第三方共享您的个人数据，因为我们首先就没有这些数据。",
+                    "securityTitle": "数据安全",
+                    "securityDesc": "您所有的短语片段数据都存放在您的设备上，受 Apple iOS 的安全措施保护。如果您使用 iCloud 同步，您的数据将受到 Apple 的端到端加密保护。",
+                    "changesTitle": "本隐私政策的变更",
+                    "changesDesc": "我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新“最后更新于”日期来通知您任何更改。我们鼓励您定期查看本隐私政策以了解任何更改。",
+                    "contactTitle": "联系我们",
+                    "contactDesc": "如果您对本隐私政策有任何疑问，可以通过电子邮件与我们联系：<a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. 版权所有。",
+                    "footerPrivacy": "隐私政策",
+                    "footerContact": "联系"
+                },
+                // Other languages can be added here following the same structure
+                "ja": {
+                    "pageTitle": "プライバシーポリシー – SnipKeys",
+                    "metaDescription": "SnipKeysのプライバシーポリシーをお読みください。私たちはあなたのプライバシーとデータを保護することをお約束します。",
+                    "title": "SnipKeys プライバシーポリシー",
+                    "lastUpdated": "<strong>最終更新日:</strong> 2025年7月4日",
+                    "philosophyTitle": "私たちのプライバシー哲学",
+                    "philosophyDesc": "SnipKeysでは、あなたのプライバシーは後付けではなく、製品の基盤です。私たちはSnipKeysを、あなたが完全に信頼できる強力な個人用ツールとして作成しました。私たちの約束はシンプルです：<strong>あなた入力するものはあなただけのものです</strong>。私たちは、機能するために必要な最小限のデータのみを収集するようにアプリとキーボードを設計しており、キーストロークや作成したコンテンツを追跡することはありません。",
+                    "infoCollectTitle": "収集する情報",
+                    "infoCollectDesc": "これを2つの部分に分けました：SnipKeysコンパニオンアプリとSnipKeysキーボード拡張機能です。",
+                    "companionAppTitle": "1. SnipKeysコンパニオンアプリ",
+                    "companionAppLi1": "<strong>個人情報：</strong>一切収集しません。SnipKeysを使用するのにアカウントは必要ありません。名前、メールアドレス、その他の個人識別情報を尋ねることはありません。",
+                    "companionAppLi2": "<strong>あなたのスニペット：</strong>作成したすべてのスニペット（テキスト断片）とキー設定は、<strong>あなたのデバイスにのみ</strong>保存されます。iCloudを有効にしている場合、このデータはAppleのiCloudサービスを使用してデバイス間で安全に同期されることがありますが、私たちはアクセスできません。",
+                    "extensionTitle": "2. SnipKeysキーボード拡張機能",
+                    "extensionLi1": "<strong>キーストローク：</strong>SnipKeysキーボードを使用して入力したものを収集、記録、送信することは<strong>ありません</strong>。スニペットの内容は使用しているテキストフィールドに直接挿入され、私たちに送信されることはありません。",
+                    "extensionLi2": "<strong>使用状況データ：</strong>キーボード拡張機能自体から分析データや使用状況データを収集することはありません。",
+                    "fullAccessTitle": "「フルアクセスを許可」について",
+                    "fullAccessP1": "一部のサードパーティ製キーボードが「フルアクセス」の許可を求めていることにお気付きかもしれません。",
+                    "fullAccessP2": "<strong>SnipKeysのコア機能は「フルアクセス」を必要としません。</strong>",
+                    "fullAccessP3": "私たちは最高レベルのプライバシーとセキュリティを提供するために、意図的にこのように設計しました。この許可がないと、キーボードはネットワークや他のアプリから完全に隔離された厳格なサンドボックスで動作し、キーストロークにアクセスできないことを保証します。",
+                    "fullAccessP4": "将来的には、この許可が必要なオプション機能（カスタムサウンドや触覚フィードバックなど）を提供する可能性があります。その場合、これらの機能を有効にするかどうかはあなたの選択であり、その時点でなぜ許可が必要なのかを明確に説明します。そのような機能のためにフルアクセスを有効にしても、キーストロークを記録または送信しないという私たちの方針は変わりません。",
+                    "howWeUseTitle": "情報の使用方法",
+                    "howWeUseDesc": "個人情報をほとんど収集しないため、使用するものはほとんどありません。あなたのスニペットは、キーボードを構成するためにあなただけが使用します。それだけです。",
+                    "sharingTitle": "データ共有と第三者",
+                    "sharingDesc": "私たちは個人データを販売、取引、貸与、または第三者と共有することはありません。なぜなら、そもそも持っていないからです。",
+                    "securityTitle": "データセキュリティ",
+                    "securityDesc": "すべてのスニペットデータは、AppleのiOSのセキュリティ対策によって保護され、あなたのデバイスに存在します。iCloud同期を使用する場合、データはAppleのエンドツーエンド暗号化によって保護されます。",
+                    "changesTitle": "このプライバシーポリシーの変更",
+                    "changesDesc": "私たちはプライバシーポリシーを随時更新することがあります。このページに新しいプライバシーポリシーを掲載し、「最終更新日」を更新することによって、変更を通知します。変更がないか定期的にこのプライバシーポリシーを確認することをお勧めします。",
+                    "contactTitle": "お問い合わせ",
+                    "contactDesc": "このプライバシーポリシーについてご質問がある場合は、メールでお問い合わせください：<a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. 無断複写・転載を禁じます。",
+                    "footerPrivacy": "プライバシーポリシー",
+                    "footerContact": "連絡先"
+                },
+                "de": {
+                    "pageTitle": "Datenschutzrichtlinie – SnipKeys",
+                    "metaDescription": "Lesen Sie die Datenschutzrichtlinie für SnipKeys. Wir verpflichten uns, Ihre Privatsphäre und Ihre Daten zu schützen.",
+                    "title": "Datenschutzrichtlinie für SnipKeys",
+                    "lastUpdated": "<strong>Zuletzt aktualisiert:</strong> 4. Juli 2025",
+                    "philosophyTitle": "Unsere Datenschutzphilosophie",
+                    "philosophyDesc": "Bei SnipKeys ist Ihre Privatsphäre kein nachträglicher Gedanke – sie ist das Fundament unseres Produkts. Wir haben SnipKeys als leistungsstarkes, persönliches Werkzeug entwickelt, dem Sie voll und ganz vertrauen können. Unser Versprechen ist einfach: <strong>Was Sie tippen, gehört Ihnen und nur Ihnen allein</strong>. Wir haben unsere App und Tastatur von Grund auf so konzipiert, dass sie nur die absolut notwendigen Daten sammeln, und wir werden niemals Ihre Tastenanschläge oder die von Ihnen erstellten Inhalte verfolgen.",
+                    "infoCollectTitle": "Welche Informationen wir sammeln",
+                    "infoCollectDesc": "Wir haben dies in zwei Teile unterteilt: die SnipKeys-Begleit-App und die SnipKeys-Tastaturerweiterung.",
+                    "companionAppTitle": "1. Die SnipKeys-Begleit-App",
+                    "companionAppLi1": "<strong>Persönliche Informationen:</strong> Wir sammeln keine. Sie benötigen kein Konto, um SnipKeys zu verwenden. Wir fragen nicht nach Ihrem Namen, Ihrer E-Mail-Adresse oder anderen persönlichen Identifikatoren.",
+                    "companionAppLi2": "<strong>Ihre Snippets:</strong> Alle von Ihnen erstellten Snippets (Textfragmente) und Tastenkonfigurationen werden <strong>nur auf Ihrem Gerät</strong> gespeichert. Wenn Sie iCloud aktiviert haben, können diese Daten sicher über den iCloud-Dienst von Apple auf Ihren Geräten synchronisiert werden, auf den wir nicht zugreifen können.",
+                    "extensionTitle": "2. Die SnipKeys-Tastaturerweiterung",
+                    "extensionLi1": "<strong>Tastenanschläge:</strong> Wir sammeln, protokollieren oder übertragen <strong>nichts</strong>, was Sie mit der SnipKeys-Tastatur tippen. Der Inhalt Ihrer Snippets wird direkt in das von Ihnen verwendete Textfeld eingefügt und niemals an uns gesendet.",
+                    "extensionLi2": "<strong>Nutzungsdaten:</strong> Wir sammeln keine Analyse- oder Nutzungsdaten von der Tastaturerweiterung selbst.",
+                    "fullAccessTitle": "Die Berechtigung „Vollen Zugriff erlauben“",
+                    "fullAccessP1": "Sie haben vielleicht bemerkt, dass einige Drittanbieter-Tastaturen um die Berechtigung „Vollen Zugriff erlauben“ bitten.",
+                    "fullAccessP2": "<strong>Die Kernfunktionalität von SnipKeys erfordert KEINEN „Vollen Zugriff“.</strong>",
+                    "fullAccessP3": "Wir haben es absichtlich so gestaltet, um Ihnen das höchste Maß an Privatsphäre und Sicherheit zu bieten. Ohne diese Berechtigung arbeitet die Tastatur in einer strengen Sandbox, die vollständig vom Netzwerk und anderen Apps isoliert ist, was garantiert, dass wir nicht auf Ihre Tastenanschläge zugreifen können.",
+                    "fullAccessP4": "In Zukunft bieten wir möglicherweise optionale Funktionen (wie benutzerdefinierte Töne oder haptisches Feedback) an, die diese Berechtigung erfordern. Wenn wir dies tun, liegt es an Ihnen, diese Funktionen zu aktivieren, und wir werden klar erklären, warum die Berechtigung zu diesem Zeitpunkt erforderlich ist. Selbst wenn der volle Zugriff für solche Funktionen aktiviert ist, bleibt unsere Richtlinie, Ihre Tastenanschläge nicht zu protokollieren oder zu übertragen, unverändert.",
+                    "howWeUseTitle": "Wie wir Informationen verwenden",
+                    "howWeUseDesc": "Da wir praktisch keine persönlichen Informationen sammeln, gibt es sehr wenig zu verwenden. Ihre Snippets werden nur von Ihnen verwendet, um Ihre Tastatur zu bestücken. Das ist alles.",
+                    "sharingTitle": "Datenweitergabe und Dritte",
+                    "sharingDesc": "Wir verkaufen, handeln, vermieten oder teilen Ihre persönlichen Daten nicht mit Dritten, weil wir sie gar nicht erst haben.",
+                    "securityTitle": "Datensicherheit",
+                    "securityDesc": "Alle Ihre Snippet-Daten befinden sich auf Ihrem Gerät und sind durch die Sicherheitsmaßnahmen von Apples iOS geschützt. Wenn Sie die iCloud-Synchronisierung verwenden, werden Ihre Daten durch die Ende-zu-Ende-Verschlüsselung von Apple geschützt.",
+                    "changesTitle": "Änderungen an dieser Datenschutzrichtlinie",
+                    "changesDesc": "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen und das Datum „Zuletzt aktualisiert“ aktualisieren. Wir empfehlen Ihnen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen.",
+                    "contactTitle": "Kontaktieren Sie uns",
+                    "contactDesc": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, können Sie uns per E-Mail kontaktieren: <a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. Alle Rechte vorbehalten.",
+                    "footerPrivacy": "Datenschutzrichtlinie",
+                    "footerContact": "Kontakt"
+                },
+                "fr": {
+                    "pageTitle": "Politique de confidentialité – SnipKeys",
+                    "metaDescription": "Lisez la politique de confidentialité de SnipKeys. Nous nous engageons à protéger votre vie privée et vos données.",
+                    "title": "Politique de confidentialité de SnipKeys",
+                    "lastUpdated": "<strong>Dernière mise à jour :</strong> 4 juillet 2025",
+                    "philosophyTitle": "Notre philosophie de la confidentialité",
+                    "philosophyDesc": "Chez SnipKeys, votre vie privée n'est pas une réflexion après coup, c'est le fondement de notre produit. Nous avons créé SnipKeys pour être un outil personnel puissant auquel vous pouvez faire entièrement confiance. Notre engagement est simple : <strong>ce que vous tapez vous appartient et à vous seul</strong>. Nous avons conçu notre application et notre clavier dès le départ pour ne collecter que le minimum de données nécessaires à leur fonctionnement, et nous ne suivrons jamais vos frappes au clavier ni le contenu que vous créez.",
+                    "infoCollectTitle": "Informations que nous collectons",
+                    "infoCollectDesc": "Nous avons divisé cela en deux parties : l'application compagnon SnipKeys et l'extension de clavier SnipKeys.",
+                    "companionAppTitle": "1. L'application compagnon SnipKeys",
+                    "companionAppLi1": "<strong>Informations personnelles :</strong> Nous n'en collectons aucune. Vous n'avez pas besoin de compte pour utiliser SnipKeys. Nous ne demandons pas votre nom, votre adresse e-mail ou tout autre identifiant personnel.",
+                    "companionAppLi2": "<strong>Vos extraits :</strong> Tous les extraits (fragments de texte) et configurations de touches que vous créez sont stockés <strong>uniquement sur votre appareil</strong>. Si vous avez activé iCloud, ces données peuvent être synchronisées en toute sécurité sur vos appareils à l'aide du service iCloud d'Apple, auquel nous ne pouvons pas accéder.",
+                    "extensionTitle": "2. L'extension de clavier SnipKeys",
+                    "extensionLi1": "<strong>Frappes au clavier :</strong> Nous ne collectons, n'enregistrons ni ne transmettons <strong>rien</strong> de ce que vous tapez avec le clavier SnipKeys. Le contenu de vos extraits est inséré directement dans le champ de texte que vous utilisez et ne nous est jamais envoyé.",
+                    "extensionLi2": "<strong>Données d'utilisation :</strong> Nous ne collectons aucune donnée d'analyse ou d'utilisation à partir de l'extension de clavier elle-même.",
+                    "fullAccessTitle": "L'autorisation « Autoriser l'accès complet »",
+                    "fullAccessP1": "Vous remarquerez peut-être que certains claviers tiers demandent l'autorisation « Accès complet ».",
+                    "fullAccessP2": "<strong>La fonctionnalité principale de SnipKeys ne nécessite PAS d'« Accès complet ».</strong>",
+                    "fullAccessP3": "Nous l'avons intentionnellement conçu de cette manière pour vous offrir le plus haut niveau de confidentialité et de sécurité. Sans cette autorisation, le clavier fonctionne dans un bac à sable strict, complètement isolé du réseau et des autres applications, ce qui garantit que nous ne pouvons pas accéder à vos frappes.",
+                    "fullAccessP4": "À l'avenir, nous pourrons proposer des fonctionnalités optionnelles (telles que des sons personnalisés ou un retour haptique) qui nécessitent cette autorisation pour fonctionner. Si nous le faisons, l'activation de ces fonctionnalités sera votre choix, et nous expliquerons clairement pourquoi l'autorisation est nécessaire à ce moment-là. Même avec l'accès complet activé pour de telles fonctionnalités, notre politique de ne pas enregistrer ou transmettre vos frappes restera inchangée.",
+                    "howWeUseTitle": "Comment nous utilisons les informations",
+                    "howWeUseDesc": "Comme nous ne collectons pratiquement aucune information personnelle, il y a très peu à utiliser. Vos extraits ne sont utilisés que par vous pour peupler votre clavier. C'est tout.",
+                    "sharingTitle": "Partage de données et tiers",
+                    "sharingDesc": "Nous ne vendons, n'échangeons, ne louons ni ne partageons vos données personnelles avec des tiers, car nous ne les avons pas en premier lieu.",
+                    "securityTitle": "Sécurité des données",
+                    "securityDesc": "Toutes vos données d'extraits résident sur votre appareil, protégées par les mesures de sécurité d'iOS d'Apple. Si vous utilisez la synchronisation iCloud, vos données sont protégées par le chiffrement de bout en bout d'Apple.",
+                    "changesTitle": "Modifications de cette politique de confidentialité",
+                    "changesDesc": "Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de « Dernière mise à jour ». Nous vous encourageons à consulter périodiquement cette politique de confidentialité pour tout changement.",
+                    "contactTitle": "Contactez-nous",
+                    "contactDesc": "Si vous avez des questions sur cette politique de confidentialité, vous pouvez nous contacter par e-mail : <a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. Tous droits réservés.",
+                    "footerPrivacy": "Politique de confidentialité",
+                    "footerContact": "Contact"
+                },
+                "es": {
+                    "pageTitle": "Política de privacidad – SnipKeys",
+                    "metaDescription": "Lea la política de privacidad de SnipKeys. Estamos comprometidos a proteger su privacidad y sus datos.",
+                    "title": "Política de privacidad de SnipKeys",
+                    "lastUpdated": "<strong>Última actualización:</strong> 4 de julio de 2025",
+                    "philosophyTitle": "Nuestra filosofía de privacidad",
+                    "philosophyDesc": "En SnipKeys, su privacidad no es una ocurrencia tardía, es la base de nuestro producto. Creamos SnipKeys para que sea una herramienta personal y poderosa en la que pueda confiar por completo. Nuestro compromiso es simple: <strong>lo que escribe es suyo y solo suyo</strong>. Hemos diseñado nuestra aplicación y teclado desde cero para recopilar la cantidad mínima absoluta de datos necesarios para funcionar, y nunca rastrearemos sus pulsaciones de teclas ni el contenido que cree.",
+                    "infoCollectTitle": "Información que recopilamos",
+                    "infoCollectDesc": "Hemos dividido esto en dos partes: la aplicación complementaria SnipKeys y la extensión de teclado SnipKeys.",
+                    "companionAppTitle": "1. La aplicación complementaria SnipKeys",
+                    "companionAppLi1": "<strong>Información personal:</strong> No recopilamos ninguna. No necesita una cuenta para usar SnipKeys. No le pedimos su nombre, dirección de correo electrónico ni ningún otro identificador personal.",
+                    "companionAppLi2": "<strong>Sus fragmentos:</strong> Todos los fragmentos (fragmentos de texto) y configuraciones de teclas que cree se almacenan <strong>solo en su dispositivo</strong>. Si tiene iCloud habilitado, estos datos se pueden sincronizar de forma segura en sus dispositivos mediante el servicio iCloud de Apple, al que no podemos acceder.",
+                    "extensionTitle": "2. La extensión de teclado SnipKeys",
+                    "extensionLi1": "<strong>Pulsaciones de teclas:</strong> <strong>No</strong> recopilamos, registramos ni transmitimos nada de lo que escriba con el teclado SnipKeys. El contenido de sus fragmentos se inserta directamente en el campo de texto que está utilizando y nunca se nos envía.",
+                    "extensionLi2": "<strong>Datos de uso:</strong> No recopilamos ningún dato analítico o de uso de la propia extensión de teclado.",
+                    "fullAccessTitle": "El permiso de «Permitir acceso total»",
+                    "fullAccessP1": "Es posible que observe que algunos teclados de terceros solicitan el permiso de «Acceso total».",
+                    "fullAccessP2": "<strong>La funcionalidad principal de SnipKeys NO requiere «Acceso total».</strong>",
+                    "fullAccessP3": "Lo hemos diseñado intencionadamente de esta manera para brindarle el más alto nivel de privacidad y seguridad. Sin este permiso, el teclado funciona en un sandbox estricto, completamente aislado de la red y otras aplicaciones, lo que garantiza que no podemos acceder a sus pulsaciones de teclas.",
+                    "fullAccessP4": "En el futuro, es posible que ofrezcamos funciones opcionales (como sonidos personalizados o retroalimentación háptica) que requieran este permiso para funcionar. Si lo hacemos, habilitar estas funciones será su elección, y explicaremos claramente por qué se necesita el permiso en ese momento. Incluso con el acceso total habilitado para tales funciones, nuestra política de no registrar ni transmitir sus pulsaciones de teclas se mantendrá sin cambios.",
+                    "howWeUseTitle": "Cómo usamos la información",
+                    "howWeUseDesc": "Dado que prácticamente no recopilamos información personal, hay muy poco que usar. Sus fragmentos los utiliza únicamente usted para poblar su teclado. Eso es todo.",
+                    "sharingTitle": "Intercambio de datos y terceros",
+                    "sharingDesc": "No vendemos, intercambiamos, alquilamos ni compartimos sus datos personales con terceros porque, en primer lugar, no los tenemos.",
+                    "securityTitle": "Seguridad de los datos",
+                    "securityDesc": "Todos los datos de sus fragmentos residen en su dispositivo, protegidos por las medidas de seguridad de iOS de Apple. Si utiliza la sincronización de iCloud, sus datos están protegidos por el cifrado de extremo a extremo de Apple.",
+                    "changesTitle": "Cambios en esta política de privacidad",
+                    "changesDesc": "Es posible que actualicemos nuestra Política de privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de privacidad en esta página y actualizando la fecha de «Última actualización». Le recomendamos que revise esta Política de privacidad periódicamente para detectar cualquier cambio.",
+                    "contactTitle": "Contáctenos",
+                    "contactDesc": "Si tiene alguna pregunta sobre esta Política de privacidad, puede contactarnos por correo electrónico: <a href=\"mailto:snipkeys@hbb.sh\">snipkeys@hbb.sh</a>",
+                    "footerRights": "© 2025 SnipKeys. Todos los derechos reservados.",
+                    "footerPrivacy": "Política de privacidad",
+                    "footerContact": "Contacto"
+                }
+            };
+            
+            const langSelector = document.getElementById('language-selector');
+
+            function applyTranslation(lang) {
+                const langTranslations = translations[lang] || translations['en'];
+
+                document.title = langTranslations.pageTitle;
+                const metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc) {
+                    metaDesc.setAttribute('content', langTranslations.metaDescription);
+                }
+
+                document.querySelectorAll('[data-translate-key]').forEach(element => {
+                    const key = element.getAttribute('data-translate-key');
+                    if (langTranslations[key]) {
+                        element.innerHTML = langTranslations[key];
+                    }
+                });
+            }
+
+            // --- Language Detection and Initialization ---
+            let initialLang = 'en';
+            const savedLang = localStorage.getItem('selectedLanguage');
+
+            if (savedLang && translations[savedLang]) {
+                initialLang = savedLang;
+            } else {
+                const userLang = navigator.language || 'en';
+                if (translations[userLang]) {
+                    initialLang = userLang;
+                } else {
+                    const baseLang = userLang.split('-')[0];
+                    if (translations[baseLang]) {
+                        initialLang = baseLang;
+                    }
+                }
+            }
+
+            // Apply the initial translation
+            applyTranslation(initialLang);
+            // Set the dropdown to the correct language
+            langSelector.value = initialLang;
+
+            // --- Event Listener for Dropdown Change ---
+            langSelector.addEventListener('change', function() {
+                const selectedLang = this.value;
+                applyTranslation(selectedLang);
+                localStorage.setItem('selectedLanguage', selectedLang);
+            });
+        });
+    </script>
 </body>
 </html>
